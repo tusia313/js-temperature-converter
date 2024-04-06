@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "XROT" 0,
+        "YROT" 0;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/wave-haikei.svg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.app-container {
+    padding: 1.4em;
+}
+
+.app-container p {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.app-container .units-container {
+    display: flex;
+    justify-content: center;
+}

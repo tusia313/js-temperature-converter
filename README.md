@@ -6,7 +6,7 @@
 Mini-project and mini-converter at the same time! Fun way to practise JS basic like switch case and select dropdown.
 
 ## 🌌 First look 
-Really basic front, but decent if You ask me.
+Really basic front, but decent, if You ask me.
 
 ![first page](./img/screen_1.png)
 

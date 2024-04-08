@@ -52,6 +52,7 @@ body {
     background-color: transparent;
     border: solid yellow 3px;
     color: white;
+    text-align: center;
 }
 
 .app-container select {

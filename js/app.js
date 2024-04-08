@@ -47,8 +47,6 @@ function calculate(firstTempUnit, secondTempUnit, temp) {
     }
     return result.toFixed(2)
 }
-
-primaryInput.addEventListener('change', update)
-secondaryInput.addEventListener('change', update)
-primarySelect.addEventListener('change', update)
-secondarySelect.addEventListener('change', update)
+[primaryInput, secondaryInput, primarySelect, secondarySelect].forEach( element => {
+    element.addEventListener('change', update)
+})

@@ -3,7 +3,7 @@
 
 ## 🌌 What's it about?
 
-Mini-project and mini-converter at the same time! In this case it's about temperatures, but You can chang it whatever You want :) Fun way to practise JS basic like switch case and select dropdown.
+Mini-project and mini-converter at the same time! Fun way to practise JS basic like switch case and select dropdown.
 
 ## 🌌 First look 
 Really basic front, but decent if You ask me.

@@ -16,13 +16,22 @@ function update(e) {
     if (elementId === 'secondary-input') {
         primaryInput.value = calculate()
     } else {
-        secondaryInput.value = calculate(primarySelect.value, secondarySelect.value, primaryInput.value) 
+        secondaryInput.value = calculate(primarySelect.value, secondarySelect.value, primaryInput.value)
     }
 }
 
 function calculate(firstTempUnit, secondTempUnit, temp) {
-    console.log('calculate!', firstTempUnit, secondTempUnit, temp)
-    return 100
+    // console.log('calculate!', firstTempUnit, secondTempUnit, temp)
+    const combination = firstTempUnit + '-' + secondTempUnit
+    let result
+    switch (combination) {
+        case 'fahrenheit - celsius':
+            result = (Number(temp) - 32) * 5 / 9
+            break
+        case 'celsius - fahrenheit':
+            result = (Number(temp) * 9/5) + 32
+    }
+    return result
 }
 
 primaryInput.addEventListener('change', update)

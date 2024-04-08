@@ -9,7 +9,7 @@ secondaryInput.value = 0
 function update(e) {
     let elementId = e.target.id
     if (elementId === 'secondary-input') {
-        primaryInput.value = calculate()
+        primaryInput.value = calculate(secondarySelect.value, primarySelect.value, secondaryInput.value )
 
     } else {
         secondaryInput.value = calculate(primarySelect.value, secondarySelect.value, primaryInput.value)
@@ -17,10 +17,13 @@ function update(e) {
 }
 
 function calculate(firstTempUnit, secondTempUnit, temp) {
-    console.log('calculate!', firstTempUnit, secondTempUnit, temp)
+   
     const combination = firstTempUnit + '-' + secondTempUnit
-    console.log(combination)
     let result
+
+    if ( firstTempUnit === secondTempUnit) {
+        return temp
+    }
 
     switch (combination) {
         case 'fahrenheit-celsius':
